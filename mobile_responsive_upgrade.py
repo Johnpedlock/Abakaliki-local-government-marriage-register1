@@ -1,7 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+from pathlib import Path
 
+css = Path("app/globals.css")
+
+content = css.read_text()
+
+responsive_styles = '''
 
 /* ==========================================
 GLOBAL RESET
@@ -97,3 +100,14 @@ SCROLLBAR
   background: #006400;
   border-radius: 10px;
 }
+'''
+
+if responsive_styles not in content:
+
+    content += responsive_styles
+
+css.write_text(content)
+
+print(
+    "Global responsive styles added successfully."
+)
