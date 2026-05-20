@@ -146,7 +146,9 @@ const styles = {
   form: {
     display: "flex",
     flexDirection: "column",
-    gap: "25px"
+    gap: "25px",
+    width: "100%",
+    maxWidth: "100%"
   },
 
   section: {
@@ -163,8 +165,10 @@ const styles = {
 
   grid: {
     display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: "15px"
+    gridTemplateColumns:
+      "repeat(auto-fit,minmax(260px,1fr))",
+    gap: "15px",
+    width: "100%"
   },
 
   input: {
