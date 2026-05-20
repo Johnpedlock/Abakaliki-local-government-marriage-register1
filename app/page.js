@@ -171,14 +171,18 @@ export default function Home() {
 
 const styles = {
   container: {
-    fontFamily: "Arial, sans-serif"
+    fontFamily: "Arial, sans-serif",
+    width: "100%",
+    overflowX: "hidden"
   },
 
   hero: {
     background: "#006400",
     color: "white",
     textAlign: "center",
-    padding: "60px 20px"
+    padding: "60px 20px",
+    width: "100%",
+    overflow: "hidden"
   },
 
   logo: {
@@ -206,8 +210,9 @@ const styles = {
     marginTop: "20px",
     display: "flex",
     justifyContent: "center",
-    gap: "10px",
-    flexWrap: "wrap"
+    gap: "15px",
+    flexWrap: "wrap",
+    width: "100%"
   },
 
   primaryBtn: {
@@ -254,7 +259,8 @@ const styles = {
   card: {
     background: "white",
     padding: "20px",
-    width: "220px",
+    width: "100%",
+    maxWidth: "220px",
     borderRadius: "8px",
     boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
   },

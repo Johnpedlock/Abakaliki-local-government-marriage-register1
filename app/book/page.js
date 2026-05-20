@@ -220,8 +220,10 @@ const styles = {
     maxWidth: 600,
     margin: "auto",
     background: "white",
-    padding: 30,
-    borderRadius: 12
+    padding: 20,
+    borderRadius: 12,
+    width: "100%",
+    overflowX: "hidden"
   },
 
   title: {
@@ -273,7 +275,8 @@ const styles = {
   },
 
   qr: {
-    width: 220,
+    width: "100%",
+    maxWidth: 220,
     marginTop: 20
   },
 
