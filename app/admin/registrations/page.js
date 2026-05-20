@@ -218,16 +218,41 @@ export default function RegistrationsPage() {
       />
 
       {/* TABLE */}
+      <div style={{
+        width: "100%",
+        overflowX: "auto"
+      }}>
+
       <table style={styles.table}>
 
         <thead>
 
           <tr>
+
             <th>Name</th>
+
             <th>Reference</th>
+
+            <th>Email</th>
+
             <th>Phone</th>
+
+            <th>Age</th>
+
+            <th>Occupation</th>
+
+            <th>Address</th>
+
+            <th>Condition</th>
+
+            <th>Consent Name</th>
+
+            <th>Wedding Date</th>
+
             <th>Status</th>
+
             <th>Actions</th>
+
           </tr>
 
         </thead>
@@ -247,7 +272,35 @@ export default function RegistrationsPage() {
               </td>
 
               <td>
+                {r.email}
+              </td>
+
+              <td>
                 {r.phone}
+              </td>
+
+              <td>
+                {r.age}
+              </td>
+
+              <td>
+                {r.occupation}
+              </td>
+
+              <td>
+                {r.address}
+              </td>
+
+              <td>
+                {r.condition}
+              </td>
+
+              <td>
+                {r.consent_name}
+              </td>
+
+              <td>
+                {r.wedding_date}
               </td>
 
               <td>
@@ -383,6 +436,8 @@ export default function RegistrationsPage() {
 
       </table>
 
+      </div>
+
     </div>
   );
 }
@@ -407,6 +462,7 @@ const styles = {
 
   table: {
     width: "100%",
+    minWidth: "1400px",
     borderCollapse: "collapse"
   },
 
