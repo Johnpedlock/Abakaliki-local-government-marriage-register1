@@ -153,9 +153,13 @@ const styles = {
 
   section: {
     border: "1px solid #ddd",
-    padding: "20px",
+    padding: "15px",
     borderRadius: "8px",
-    background: "#fafafa"
+    background: "#fafafa",
+    width: "100%",
+    maxWidth: "100%",
+    overflow: "hidden",
+    boxSizing: "border-box"
   },
 
   sectionTitle: {
@@ -174,7 +178,10 @@ const styles = {
   input: {
     padding: "10px",
     border: "1px solid #ccc",
-    borderRadius: "5px"
+    borderRadius: "5px",
+    width: "100%",
+    maxWidth: "100%",
+    boxSizing: "border-box"
   },
 
   button: {
@@ -184,7 +191,9 @@ const styles = {
     border: "none",
     borderRadius: "5px",
     fontWeight: "bold",
-    cursor: "pointer"
+    cursor: "pointer",
+    width: "100%",
+    boxSizing: "border-box"
   },
 
   error: {
