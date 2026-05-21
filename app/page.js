@@ -119,6 +119,32 @@ export default function Home() {
 
 
 
+      {/* QR VERIFICATION SECTION */}
+      <section style={styles.section}>
+
+        <h2>
+          QR Appointment Verification
+        </h2>
+
+        <p style={styles.sectionText}>
+          Every approved appointment
+          includes a secure QR code
+          for official verification at
+          the Abakaliki Marriage Registry.
+        </p>
+
+        <p style={styles.sectionText}>
+          Registry officers can scan
+          the QR code to validate
+          appointment authenticity,
+          applicant identity, and
+          appointment status instantly.
+        </p>
+
+      </section>
+
+
+
       {/* MAP SECTION */}
       <section style={styles.section}>
         <h2>Office Location</h2>
@@ -218,18 +244,26 @@ const styles = {
   primaryBtn: {
     background: "white",
     color: "#006400",
-    padding: "12px 20px",
+    padding: "14px 20px",
     textDecoration: "none",
     borderRadius: "5px",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    width: "100%",
+    maxWidth: "260px",
+    textAlign: "center",
+    boxSizing: "border-box"
   },
 
   secondaryBtn: {
     border: "1px solid white",
     color: "white",
-    padding: "12px 20px",
+    padding: "14px 20px",
     textDecoration: "none",
-    borderRadius: "5px"
+    borderRadius: "5px",
+    width: "100%",
+    maxWidth: "260px",
+    textAlign: "center",
+    boxSizing: "border-box"
   },
 
   section: {
